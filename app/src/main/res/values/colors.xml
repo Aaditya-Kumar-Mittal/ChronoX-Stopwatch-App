@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- Crimson Red Shades -->
+    <color name="crimson_red_50">#FFEAEA</color>
+    <color name="crimson_red_100">#FFC7C7</color>
+    <color name="crimson_red_200">#FFA3A3</color>
+    <color name="crimson_red_300">#FF7F7F</color>
+    <color name="crimson_red_400">#FF5C5C</color>
+    <color name="crimson_red_500_main">#C82A2A</color>
+    <color name="crimson_red_600">#B22525</color>
+    <color name="crimson_red_700">#9C2020</color>
+    <color name="crimson_red_800">#861B1B</color>
+    <color name="crimson_red_900">#701616</color>
+    <color name="crimson_red_950">#4B0F0F</color>
+
+    <!-- MU Black Shades -->
+    <color name="mu_black_50">#F2F2F2</color>
+    <color name="mu_black_100">#D9D9D9</color>
+    <color name="mu_black_200">#BFBFBF</color>
+    <color name="mu_black_300">#A6A6A6</color>
+    <color name="mu_black_400">#8C8C8C</color>
+    <color name="mu_black_500_main">#0A0A0A</color>
+    <color name="mu_black_600">#080808</color>
+    <color name="mu_black_700">#060606</color>
+    <color name="mu_black_800">#040404</color>
+    <color name="mu_black_900">#020202</color>
+    <color name="mu_black_950">#000000</color>
+
+    <!-- Slate Shades (Base: #708090) -->
+    <color name="slate_50">#F5F7F9</color>
+    <color name="slate_100">#DDE3EB</color>
+    <color name="slate_200">#C5CFDD</color>
+    <color name="slate_300">#ADBCCC</color>
+    <color name="slate_400">#95A8BB</color>
+    <color name="slate_500">#708090</color>
+    <color name="slate_600">#5C6C7B</color>
+    <color name="slate_700">#495866</color>
+    <color name="slate_800">#364452</color>
+    <color name="slate_900">#232F3D</color>
+    <color name="slate_950">#101B28</color>
+
+
+</resources>

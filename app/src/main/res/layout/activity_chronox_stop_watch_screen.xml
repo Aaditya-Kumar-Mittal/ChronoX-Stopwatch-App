@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chronox_background1"
+    tools:context=".ChronoxStopWatchScreen">
+
+    <TextView
+        android:id="@+id/stopwatchHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="Stopwatch"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/stopwatchCard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/stopwatchCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="100pt"
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toTopOf="@id/stopWatchStopButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/stopwatchHeading">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="4dp">
+
+            <!-- Circular Progress Bar -->
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/stopwatchProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="0"
+                app:indicatorColor="@color/crimson_red_500_main"
+                app:indicatorDirectionCircular="clockwise"
+                app:indicatorSize="250dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:trackColor="@color/mu_black_400"
+                app:trackThickness="5dp" />
+
+            <TextView
+                android:id="@+id/stopwatchText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00:00"
+                android:textColor="@color/mu_black_500_main"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/stopwatchProgress"
+                app:layout_constraintEnd_toEndOf="@id/stopwatchProgress"
+                app:layout_constraintStart_toStartOf="@id/stopwatchProgress"
+                app:layout_constraintTop_toTopOf="@id/stopwatchProgress" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/stopWatchStopButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="true"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="25dp"
+        app:layout_constraintBottom_toTopOf="@id/stopWatchResetButton"
+        app:layout_constraintEnd_toStartOf="@id/stopWatchStartButton"
+        app:layout_constraintHeight_percent="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/stopwatchCard"
+        app:layout_constraintWidth_percent="0.35">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_button_background2"
+            android:gravity="center"
+            android:paddingVertical="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="Stop"
+                android:textColor="@color/mu_black_500_main"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/stopWatchStartButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="true"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="25dp"
+        app:layout_constraintBottom_toTopOf="@id/stopWatchResetButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.12"
+        app:layout_constraintStart_toEndOf="@id/stopWatchStopButton"
+        app:layout_constraintTop_toBottomOf="@id/stopwatchCard"
+        app:layout_constraintWidth_percent="0.35">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_button_background1"
+            android:gravity="center"
+            android:paddingVertical="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="Start"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/stopWatchResetButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="true"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/stopWatchStartButton"
+        app:layout_constraintHeight_percent="0.12"
+        app:layout_constraintStart_toStartOf="@id/stopWatchStopButton"
+        app:layout_constraintTop_toBottomOf="@id/stopWatchStartButton"
+        app:layout_constraintWidth_percent="0.80">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_button_background1"
+            android:gravity="center"
+            android:paddingVertical="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="Reset"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
