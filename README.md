@@ -4,6 +4,8 @@
 
 ChronoX is a clean and functional stopwatch app built using **Kotlin**, **ViewBinding**, and custom **XML layouts**. Designed for simplicity and performance, it allows users to start, stop, and reset time while displaying progress in a circular indicator.
 
+## ![App Board](./screenshots/chronox_app_board.png)
+
 ---
 
 ## 📱 Features
